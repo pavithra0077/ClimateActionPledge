@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f8ff;
+  color: #0a1c26;
+}
+
+/* Hero */
+#hero {
+  text-align: center;
+  background: linear-gradient(120deg, #14173a, #2c3665);
+  padding: 60px 20px;
+  color: white;
+}
+#hero h1 {
+  font-size: 2.2rem;
+}
+#hero p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+#hero button {
+  background: #34bec3;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* KPI */
+#kpi {
+  text-align: center;
+  padding: 40px 20px;
+}
+.kpi-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.kpi-card {
+  background: white;
+  border: 1px solid #5e96df;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Why */
+#why {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Form */
+#pledgeForm {
+  background: #f5f8ff;
+  padding: 40px 25px;
+}
+#pledgeForm form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+label {
+  font-weight: 500;
+}
+input, select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+button[type="submit"] {
+  background: #0a1c26;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* 🌿 Theme Container */
+.theme {
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px 18px;
+  border: 1px solid #c7d7ff;
+  margin-bottom: 16px;
+}
+
+/* Title Color */
+.theme strong,
+.theme h4 {
+  color: #1b2f6f;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Checkbox and Text Alignment */
+.theme label {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between box & text */
+  margin-left: 5px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Checkbox Size & Color */
+.theme input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #1f3681; /* soft green tick */
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* Optional hover effect for a modern touch */
+.theme label:hover {
+  background: #f4f8ff;
+  border-radius: 5px;
+  transition: 0.2s ease;
+}
+
+
+/* Certificate */
+#certificate {
+  text-align: center;
+  padding: 40px;
+}
+.hidden {
+  display: none;
+}
+#certCard {
+  background: white;
+  display: inline-block;
+  padding: 20px 40px;
+  border: 2px dashed #1b2f6f;
+  border-radius: 12px;
+}
+#certStars {
+  font-size: 1.5rem;
+  color: gold;
+}
+
+/* Pledge Wall */
+#pledgeWall {
+  padding: 40px 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid #a1dff2;
+}
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background: #e7edfb;
+}
+
+/* Footer */
+footer {
+  background: #1b2f6f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #hero h1 { font-size: 1.6rem; }
+  .kpi-container { flex-direction: column; }
+}
+#certCard {
+  background: linear-gradient(135deg, #ffffff, #e7edfb);
+  display: inline-block;
+  padding: 40px 60px;
+  border: 3px solid #1b2f6f;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin: 20px auto;
+}
+
+#certCard h3 {
+  color: #1b2f6f;
+  font-size: 1.8rem;
+}
+
+#certCard p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+#certStars {
+  font-size: 2rem;
+  color: gold;
+  margin-top: 10px;
+}
+
+/* Certificate Section */
+.certificate-preview {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.cert-card {
+  width: 100%;
+  max-width: 1000px;
+  background: #fff;
+  position: relative;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.cert-inner {
+  position: relative;
+  background: #fff;
+  padding: 28px;
+  border-radius: 6px;
+  border: 6px solid #d4af37; /* gold */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.cert-title {
+  text-align: center;
+  font-family: "Baskerville Old Face", "Times New Roman", serif;
+  font-size: 32px;
+  margin: 6px 0;
+  color: #1b2f6f;
+  letter-spacing: 2px;
+}
+
+.cert-sub {
+  text-align: center;
+  color: #1b2f6f;
+  margin-top: 6px;
+  font-family: "Baskerville Old Face";
+}
+
+.cert-name {
+  text-align: center;
+  font-family: "Baskerville Old Face";
+  font-size: 36px;
+  margin: 8px 0;
+  font-weight: 700;
+}
+
+.cert-line {
+  text-align: center;
+  font-size: 18px;
+  margin: 6px 0;
+  font-family: "Baskerville Old Face";
+}
+
+.cert-stars {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 22px;
+  color: #c6861f;
+}
+
+.cert-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+  align-items: center;
+}
+
+.cert-date {
+  color: #1b2f6f;
+  font-family: "Baskerville Old Face";
+}
+
+.cert-sign {
+  color: #b8871f;
+  font-family: "Pacifico", cursive;
+  font-size: 18px;
+}
+

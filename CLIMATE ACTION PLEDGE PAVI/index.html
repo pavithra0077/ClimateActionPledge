@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLIMATE ACTION PLEDGE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <h1>🌍 CLIMATE ACTION PLEDGE</h1>
+    <p>Together, we can make our planet cooler and greener. Great to take the pledge today!</p>
+    <button onclick="scrollToForm()">TAKE THE PLEDGE</button>
+  </section>
+
+  <!-- KPI SECTION -->
+  <section id="kpi">
+    <h2>Live Community Impact</h2>
+    <div class="kpi-container">
+      <div class="kpi-card">
+        <h3>🎯 Target Pledges</h3>
+        <p id="targetPledges">1,000,000</p>
+      </div>
+      <div class="kpi-card">
+        <h3>🌱 Achieved Pledges</h3>
+        <p id="achievedPledges">0</p>
+      </div>
+      <div class="kpi-card">
+        <h3>👩‍🎓 Students</h3>
+        <p id="studentCount">0</p>
+      </div>
+      <div class="kpi-card">
+        <h3>👔 Professionals</h3>
+        <p id="proCount">0</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY SECTION -->
+  <section id="why">
+    <h2>Why Take Climate Action?</h2>
+    <p>Every small act adds up. By changing simple habits—saving energy, reducing waste, traveling smart—you contribute to a global movement that protects our planet for future generations.</p>
+  </section>
+
+  <!-- PLEDGE FORM -->
+  <section id="pledgeForm">
+    <h2>Take Your Climate Pledge</h2>
+    <form id="form">
+      <label>Name* <input type="text" id="name" required></label>
+      <label>Email* <input type="email" id="email" required></label>
+      <label>Mobile* <input type="tel" id="mobile" required></label>
+      <small>📱 Email and Mobile are required for validation but never shown publicly.</small>
+      <label>State <input type="text" id="state"></label>
+
+      <label>Profile Type</label>
+      <select id="profile">
+        <option value="Student">Student</option>
+        <option value="Working Professional">Working Professional</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <h3>Commitment Themes</h3>
+
+      <div class="theme">
+        <strong>Theme 1: Lifestyle</strong>
+        <label><input type="checkbox" class="commit" value="Carry a reusable water bottle and shopping bag"> Carry a reusable water bottle and shopping bag</label>
+        <label><input type="checkbox" class="commit" value="Unplug devices when not in use"> Unplug devices when not in use</label>
+        <label><input type="checkbox" class="commit" value="Reduce AC usage by 1°C"> Reduce AC usage by 1°C</label>
+      </div>
+
+      <div class="theme">
+        <strong>Theme 2: Green while going out</strong>
+        <label><input type="checkbox" class="commit" value="Carpool or use public transport"> Carpool or use public transport</label>
+        <label><input type="checkbox" class="commit" value="Walk or cycle for short trips"> Walk or cycle for short trips</label>
+        <label><input type="checkbox" class="commit" value="Carry a reusable water bottle and shopping bag"> Carry a reusable water bottle and shopping bag</label>
+      </div>
+
+      <div class="theme">
+        <strong>Theme 3: Awareness & Community Action</strong>
+        <label><input type="checkbox" class="commit" value="Support eco-friendly startups or NGOs"> Support eco-friendly startups or NGOs</label>
+        <label><input type="checkbox" class="commit" value="Plant trees"> Plant trees</label>
+        <label><input type="checkbox" class="commit" value="Participate in local clean-up drive"> Participate in local clean-up drive</label>
+      </div>
+
+      <button type="submit">Submit Pledge</button>
+    </form>
+  </section>
+
+  <!-- Certificate Section -->
+  <section id="certificateSection" class="card hidden">
+    <h2>Your Certificate</h2>
+    <div id="certificatePreview" class="certificate-preview">
+    <div id="certCard" class="cert-card">
+    <div class="cert-inner">
+      <h1 class="cert-title">CLIMATE ACTION PLEDGE</h1>
+      <p class="cert-sub">This certifies that</p>
+      <h2 id="certName" class="cert-name">Pavithra</h2>
+      <p class="cert-line"><strong>is officially <span class="em">Cool Enough to Care!</span></strong></p>
+    <div id="certStars" class="cert-stars">⭐⭐⭐⭐⭐</div>
+    <div class="cert-footer">
+    <div class="cert-date" id="certDate"></div>
+    <div class="cert-sign">(Signed) <span class="sign-name">Pavithra</span></div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="cert-actions">
+      <button class="btn" onclick="downloadCert()">📄 Download Certificate</button>
+    </div>
+  </section>
+
+
+
+  <!-- PLEDGE WALL -->
+  <section id="pledgeWall">
+    <h2>🌿 Public Pledge Wall</h2>
+    <table id="wallTable">
+      <thead>
+        <tr>
+          <th>Pledge ID</th>
+          <th>Name</th>
+          <th>Date</th>
+          <th>State</th>
+          <th>Profile</th>
+          <th>⭐ Love for Planet</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>📢 Mobile Number and Email are required for validation but never shown publicly.<br>
+    Data is used only for verification and engagement.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
